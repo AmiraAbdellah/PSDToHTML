@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box ;
+}
+body{
+    font-family: Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #191e22;
+}
+.contain{
+    width:1000px;
+    margin: auto;
+    background-color: #fff;
+}
+.container{
+    width:800px;
+    margin :auto;
+
+}
+
+/*start header*/
+.header{
+    background-image: url(../images/person2.jpeg);
+    background-size: 100% 100% ;
+    color:#fff;
+}
+.header .title{text-align: center; padding: 150px;}
+
+.header .title h2{
+    font-size:30px;
+    padding: 5px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+.header .title button{ 
+    padding: 8px 15px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+}
+/*end header*/
+
+/*start navbar*/
+.header .navbar{
+    background-color: #191e22; 
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.navbar .logo {
+    float: left;
+    text-transform: capitalize;
+    font-family: lobster, Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+.navbar .logo span{color: #2ecc71;  }
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden; 
+    float: right;
+}
+.navbar ul li{
+    padding: 10px 10px;
+    float: left;
+    color:#fff;
+    cursor: pointer;
+}
+.navbar ul li a , .header .title button a{
+    color:#fff;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color:#3bb576;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.header .title button a:hover ,.header .title button:hover{
+    color:#3bb576;
+    font-weight: bold;
+    border-color:#3bb576 ;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+/*end navbar*/
+
+/*start main*/
+.main{overflow: hidden;padding: 40px 0;}
+
+.main .test{
+    float: left;
+    width: 33.33333%;   
+    line-height: 25px;
+    box-sizing: content-box;  
+}
+.main h3{text-transform: capitalize;color:#555;}
+
+.main .test p {
+    color: #888;
+    box-sizing: content-box;
+    padding-right: 20px;
+}
+/*end main*/
+
+/*start about me*/
+.def{overflow: hidden; background-color: #f2f2f2;}
+
+.def .figure{
+    float: left;
+    width:33.33333%;
+    margin: 0;
+}
+.def .figure img{width:100%;height: 475px;}
+
+.def .about_me > section{padding: 15px 0px 0px 30px;width:50%;}
+
+.def .about{overflow:hidden;line-height: 21px;}
+
+.def .icons{ margin-top: -18px;}
+
+.def h3, .def h4{
+    text-transform: capitalize;
+    color:#444;
+    margin-bottom: -1px;
+    margin-top: 6px;
+}
+ p{color: #666;}
+
+.def .about .icon{
+    float:left;
+    margin-left:0px;
+    margin-right:20px;
+}
+.def .about > section{
+    float: left;
+    width:35%;
+}
+/*end about me*/
+
+/*start skills*/
+.skills{
+    overflow: hidden;
+    padding: 30px;
+    margin-top: 0;
+}
+.skills h3, .skills button a{
+    text-transform: capitalize;
+    color: #555;
+}
+.skills p{color: #888}
+
+.skills button a{text-decoration: none;color: #2dcc70;}
+
+.skills button a:hover , .skills button:hover{
+    color: #fff;
+    background-color:#2dcc70 ;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.skills button , .resume button{
+    padding: 7px 10px;
+    background-color: #fff;
+    color: #2dcc70;
+    border-color: #2dcc70;
+    border-style: solid;
+    cursor: pointer;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.skills .my_skills{
+    float: left;
+    width:55%;
+    line-height: 25px;  
+}
+.skills .my_program{
+    float: left;
+    padding: 15px 0px 0px 70px;
+    text-transform: uppercase;
+}
+/*meter { -webkit-appearance: none; }*//*Crucial, this will disable the default styling in Webkit browsers*/
+meter::-webkit-meter-bar {
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    width:300px;
+    height: 20px;
+    border-radius: 0%;
+}
+meter::-webkit-meter-optimum-value {
+    background: #2ecc71;
+    background: -moz-linear-gradient(top, #a1d4e6 0%, #6bb4d1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #91e2b3), color-stop(100%, #2ecc71));
+    background: -webkit-linear-gradient(top, #a1d4e6 0%, #2ecc71 100%);
+    background: -o-linear-gradient(top, #a1d4e6 0%, #6bb4d1 100%);
+    background: -ms-linear-gradient(top, #a1d4e6 0%, #6bb4d1 100%);
+    background: linear-gradient(to bottom, #91e2b3 0%, #2ecc71 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#91e2b3', endColorstr='#2ecc71',GradientType=0);
+    
+}
+.skills .my_program meter{
+    display: block;
+    padding: 10 0 40px;
+}
+.skills meter{ color: #fff;}
+/*end skills*/
+
+/*start resume*/
+.resume{
+    background-color: #f2f2f2; 
+    padding: 30px;
+    line-height: 20px; 
+    padding-bottom: 50px;
+}
+.resume div{text-align: center;}
+
+.resume div h3{text-transform: capitalize;color: #333;}
+
+.resume div p{line-height: 25px;color: #555;}
+/*end resume*/
+
+/*start education*/
+.education{overflow: hidden;padding-top: 50px;}
+
+h3{text-transform: capitalize;color: #444;}
+
+.education p, .experience p{color: #888;}
+
+.education .colege, .experience .work{
+    float: left;
+    width: 50%;
+    padding-right: 100px;
+    line-height: 25px;
+}
+.education .courses, .experience .web{float: left;width:50%;}
+
+.education .courses section, .experience .web section{margin-bottom: 60px ; line-height: 23px; }
+
+.education .courses span, .experience .web span{
+    border: 1px outset #2ecc71;
+    text-transform: capitalize;
+    background-color: #2ecc71;
+    padding:5px 10px;
+    color:#fff;
+   display:inline-block;
+   margin-bottom: 10px;
+}
+.line{border-top: 2px solid rgb(197, 192, 192);padding-top: 20px;}
+/*end education*/
+
+/*start experience*/
+.experience{
+    overflow: hidden;
+    border-top: 2px solid rgb(197, 192, 192);
+    padding-top: 30px;
+}
+/*end experience*/
+
+/*start testimonials*/
+.loerm{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 40px;
+    line-height: 25px;
+}
+h4{text-transform: capitalize;color: #333;}
+
+.loerm blockquote{
+    color: #888;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+/*end testimonials*/
+
+/*start portfolio*/
+.portfolio{
+    text-align: center;
+    line-height: 25px;
+    padding-top: 30px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.portfolio p{
+    padding-bottom: 30px;
+    opacity: 0.7;
+    color: #888;
+}
+.portfolio img{
+    width:243px;
+    height: 180px;
+    margin:10px;
+    padding:3px;
+    background-color: #fff;
+    border:1px solid #ccc;
+    box-shadow: 5px 5px 5px #ccc,
+                -5px -5px 5px #ccc;
+    border-radius: 10px;
+}
+/*end portfolio*/
+
+/*start footer*/
+.footer {background-color: #252f31;color: #fff;}
+
+.footer .info{overflow: hidden;}
+
+.footer h3{padding-top: 20px;color:#fff;}
+
+.footer p{color: #6a6e71;}
+
+.info .contact p span{color: #fff;}
+
+.footer .contact{
+    float: left;
+    width:50%;
+    padding-right: 100px;
+}
+.footer .info .input input , textarea{width: 45%;  }
+
+.footer .info .input input{height: 5%;}
+
+.footer .input input, .footer textarea, .footer button{
+    display: block;
+    margin-bottom:20px;
+    margin-top:12px;
+    background-color: #4b5557;
+}
+.footer button{
+    background-color: #191e22;
+    color: #fff;
+    padding: 8px 15px;
+    border-style: hidden;
+}
+.footer button a{
+    text-decoration: none;
+    color: white;
+}
+
+/*start social*/
+.footer .social{
+    background-color: #191e22;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+.footer .social p{
+    margin:2px;
+}
+.fa {
+    padding: 5px;
+    font-size: 32px;
+    width:30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 3px 3px;
+  }
+  .fa:hover {
+    opacity: 0.9;
+    color:white
+  }
+  .fa-facebook {
+    background: #4b5557;
+    color: #191e22;
+  }
+  .fa-twitter {
+    background: #4b5557;
+    color: #191e22;
+  }
+  .fa-google {
+    background: #4b5557;
+    color: #191e22;
+  }
+  
+  .fa-linkedin {
+    background: #4b5557;
+    color: #191e22;
+  }
+  .fa-pinterest {
+    background: #4b5557;
+    color: #191e22;
+  }
+  .fa-dribbble {
+    background: #4b5557;
+    color: #191e22;
+  }
+  /*end social*/
+  /*end footer*/
